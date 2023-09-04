@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="./script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="contenedor">
+        <form class="formulario" id="formulario" action="">
+            <input type="text" id="link" placeholder="Ingrese texto o URL">
+            <button class="btnGenerar" id="btGenerar">Generar QR</button>
+        </form>
+        <div id="contenedorQR" class="contenedorQR"></div>
+    </div>
 </body>
 </html>
